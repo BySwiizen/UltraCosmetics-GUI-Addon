@@ -31,10 +31,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      # https://github.com/gradle/wrapper-validation-action
-      - name: Wrapper validation
-        uses: gradle/actions/wrapper-validation@v5.0.2
-
       # https://github.com/gradle/gradle-build-action
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5.0.2
