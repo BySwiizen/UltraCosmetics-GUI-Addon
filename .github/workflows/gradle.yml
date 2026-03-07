@@ -54,7 +54,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build project
-        run: ./gradlew build --no-daemon
+        run: ./gradlew shadowJar --no-daemon
 
       # https://github.com/actions/upload-artifact
       - name: Upload build artifact
